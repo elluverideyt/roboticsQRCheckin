@@ -1,0 +1,18 @@
+{
+  "name": "roboticsqrcheckin",
+  "version": "1.0.0",
+  "description": "This repository contains a Check In service designed for VCS Robotics meetings. Each meeting generates a unique QR code, which attendees scan to check in and check out, ensuring accurate session tracking and enhanced security.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

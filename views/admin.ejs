@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Admin – QR Code</title>
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Admin: Set QR Code Destination</h1>
+    <form method="POST" action="/admin">
+      <input type="url" name="link" required placeholder="https://example.com" value="<%= link %>">
+      <button type="submit">Save</button>
+    </form>
+    <% if (link) { %>
+      <p>Current link: <a href="<%= link %>" target="_blank"><%= link %></a></p>
+    <% } %>
+    <p><a href="/">View Main Page</a></p>
+  </div>
+</body>
+</html>
